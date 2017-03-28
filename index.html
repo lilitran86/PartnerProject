@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
+	<link rel="stylesheet" href="styles.css">
+
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 </head>
+
 <body>
-		<header>
-			<h1 class="header">plan*it</h1>
-			<nav class="side-nav">
-				<div class="left-side">
-					<h2 class="add">Add Itinerary</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="activities">Activities</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="food">Food & Drinks</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="free">Free</h2>
-				</div>
+<!--  <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>-->
+<h1>planIt</h1>
+<!-- Trigger/Open The Modal -->
+<div style="text-align: center;">
+<button id="myBtn" class="button">Your Itinerary</button>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  	<!-- Modal content -->
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    			<p id="events">
+		 			<input type="date" id="myDate"/>Your Events Go Here in the Modal..</p>
+  		</div>
+		</div>
+	</div>
+
+	<div class="stretch">
 				<div class="left-side">
 					<h2 class="edit">Edit & Share</h2>
 				</div>
@@ -27,17 +34,44 @@
 				<div class="left-side">
 					<h2 class="help">Help</h2>
 				</div>
-			</nav>
-		</header>
- <main>
-    <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>
-    <h1> Your Itinerary</h1>
-    <h2> {date}</h2>
-    <h3> {events}</h3>
-    <h3> {food/drinks}</h3>
-    <h3> {free events}</h3>
-   
-  </main>
+		</div>
+		
+	 </div>
+
 <footer></footer>
+
+
+
+<!--
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+-->
+<script
+ src="https://code.jquery.com/jquery-3.2.1.js"
+ integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
