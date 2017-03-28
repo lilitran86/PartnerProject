@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
 	<link rel="stylesheet" href="styles.css">
-
-<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 </head>
 
 <body>
 <!--  <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>-->
 <h1>planIt</h1>
-	<p>Find out what's going on in Los Angeles today</p>
+	<p>Discover new things to do, food, & drinks in Los Angeles</p>
 <!-- Trigger/Open The Modal -->
 <div style="text-align: center;">
 <button id="myBtn" class="button">Your Itinerary</button>
@@ -22,7 +19,13 @@
 				<h2> Your Day </h2>
     		<span class="close">&times;</span>
 		 			<input type="date" id="myDate"/><br>
-					<input type="button" onclick="show_alert2()" value="Activities "/>
+					<input type="button" id="events" onclick="show_alert2()" value="Activities "/>
+					<input placeholder="City, Zip Code, State" </input><a class="button"></a>
+					<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+							<div id="map"></div>
+							<ul id="geoData">
+    					s
+							</ul>
   		</div>
 		</div>
 	</div>
@@ -75,8 +78,8 @@ window.onclick = function(event) {
  crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="http://api.eventful.com/js/api">
-	</script>
+	<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY&libraries=places&callback=initMap" async defer></script>
 
 </body>
 </html>
