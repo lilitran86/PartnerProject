@@ -10,16 +10,19 @@
 <body>
 <!--  <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>-->
 <h1>planIt</h1>
+	<p>Find out what's going on in Los Angeles today</p>
 <!-- Trigger/Open The Modal -->
 <div style="text-align: center;">
 <button id="myBtn" class="button">Your Itinerary</button>
+
 		<!-- The Modal -->
 		<div id="myModal" class="modal">
   	<!-- Modal content -->
   		<div class="modal-content">
+				<h2> Your Day </h2>
     		<span class="close">&times;</span>
-    			<p id="events">
-		 			<input type="date" id="myDate"/>Your Events Go Here in the Modal..</p>
+		 			<input type="date" id="myDate"/><br>
+					<input type="button" onclick="show_alert2()" value="Activities "/>
   		</div>
 		</div>
 	</div>
@@ -35,7 +38,7 @@
 					<h2 class="help">Help</h2>
 				</div>
 		</div>
-		
+
 	 </div>
 
 <footer></footer>
@@ -72,6 +75,8 @@ window.onclick = function(event) {
  crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="http://api.eventful.com/js/api">
+	</script>
 
 </body>
 </html>
