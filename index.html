@@ -2,7 +2,11 @@
 <html lang="en-US">
 <head>
 	<link rel="stylesheet" href="styles.css">
-
+	//googlemaps 2
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY">
+	</script>
 </head>
 
 <body>
@@ -22,12 +26,13 @@
 		 			<input type="date" id="myDate"/><br>
 						<a class="button" id="GetEvents" value="Activities " href="#"/>Events</a>
 						<div id="events" class="events"></div>
-						<input placeholder="City, Zip Code, State" </input><a class="button"></a>
-					<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+						<!-- <input placeholder="City, Zip Code, State" </input><a class="button"></a> -->
+					<!-- <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
 							<div id="map"></div>
 							<ul id="geoData">
-    					s
-							</ul>
+							</ul> -->
+							<div id="map">
+							</div>
   		</div>
 		</div>
 	</div>
@@ -43,37 +48,10 @@
 					<h2 class="help">Help</h2>
 				</div>
 		</div>
-
 	 </div>
 
 <footer></footer>
 
-
-
-<!--
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
--->
 <script
  src="https://code.jquery.com/jquery-3.2.1.js"
  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -81,7 +59,7 @@ window.onclick = function(event) {
 
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY&libraries=places&callback=initMap" async defer></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY&libraries=places&callback=initMap" async defer></script> -->
 
 </body>
 </html>
