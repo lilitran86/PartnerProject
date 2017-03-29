@@ -19,12 +19,11 @@ function show_alert2(){
         sort_order: "popularity",
      };
      EVDB.API.call("/events/search", oArgs, function(oData) {
-       console.log("hello");
+       console.log(oData);
       });
   }
 
-
-//This is the api for eventful -- select id="activities"
+//This is the api for eventful-- select id="activities"
 // $("#myBtn").click(function(){
 // 	$('#events').append('Your Events For the Day Go HERE');
 // });
@@ -50,7 +49,7 @@ window.onclick = function(event) {
     }
 }
 
-//google maps
+//google maps 1
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -33.8688, lng: 151.2195},
