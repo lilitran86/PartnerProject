@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
 	<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -19,8 +20,9 @@
 				<h2> Your Day </h2>
     		<span class="close">&times;</span>
 		 			<input type="date" id="myDate"/><br>
-					<input type="button" id="events" onclick="show_alert2()" value="Activities "/>
-					<input placeholder="City, Zip Code, State" </input><a class="button"></a>
+						<a class="button" id="GetEvents" value="Activities " href="#"/>Events</a>
+						<div id="events" class="events"></div>
+						<input placeholder="City, Zip Code, State" </input><a class="button"></a>
 					<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
 							<div id="map"></div>
 							<ul id="geoData">

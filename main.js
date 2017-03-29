@@ -20,8 +20,13 @@ function show_alert2(){
      };
      EVDB.API.call("/events/search", oArgs, function(oData) {
        console.log(oData);
+      var eventsData = JSON.stringify(oData);
+      $('#events').text(eventsData);
       });
   }
+  $('#GetEvents').click(function(){
+    show_alert2();
+  })
 
 //This is the api for eventful-- select id="activities"
 // $("#myBtn").click(function(){
