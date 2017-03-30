@@ -151,14 +151,14 @@ function initialize() {
 
   service.nearbySearch(request, callback);
 
-  google.maps.event.addListener(map,'rightclick', function(event){
+  google.maps.event.addListener(map,'click', function(event){
     map.setCenter(event.latLng)
     clearResults(markers)
 
     var request = {
       location: event.latLng,
       radius: 8047,
-      types: ['cafe']
+      types: ['cafe','bakery','restaurant','bar']
     };
     service.nearbySearch(request, callback);
   })
@@ -191,5 +191,5 @@ function createMarker(place){
     }
     markers = []
   }
-  
+
 google.maps.event.addDomListener(window,'load',initialize);
