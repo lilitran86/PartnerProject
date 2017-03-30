@@ -150,3 +150,22 @@ p {
 #searchInput:focus {
     border-color: #4d90fe;
 }
+
+
+
+
+.left-side {
+    margin: 0 auto;
+    /* display: inline-flex; */
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100px;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+body > div.stretch > div:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0);
+}
