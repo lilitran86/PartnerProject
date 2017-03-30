@@ -178,13 +178,13 @@ function createMarker(place){
   });
 
   google.maps.event.addListener(marker,'click', function(){
-    infowindow.setContent(place.name);
+    infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                 '<br>' + place.rating + '<br>' + place.price_level + '</div>');
     infowindow.open(map,this);
   });
   return marker;
 
 }
-
   function clearResults(markers){
     for (var m in markers) {
       markers[m].setMap(null)
